@@ -61,14 +61,10 @@ python -m venv venv
 .\venv\Scripts\activate
 Instala las dependencias: (Asegúrate de haber creado el archivo requirements.txt primero)
 
-Bash
-
-pip install -r requirements.txt
+"pip install -r requirements.txt"
 Ejecuta la aplicación:
 
-Bash
-
-flask run --debug
+"flask run --debug"
 ¡Abre http://127.0.0.1:5000 en tu navegador!
 
 📬 Contacto
