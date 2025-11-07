@@ -1,9 +1,12 @@
 # paulo-romeo-portfolio-web
 Portfolio Personal
+
 🚀 Ver la Demo en Vivo 🚀
+
 (Reemplaza esta URL con el enlace de tu web en PythonAnywhere cuando la despliegues)
 
 📄 Sobre este Proyecto
+
 Bienvenido al repositorio de mi portfolio personal. Esta web no es solo un currículum estático; es un proyecto Full Stack vivo construido desde cero para demostrar mis habilidades como desarrollador de software.
 
 El objetivo principal es servir como un centro neurálgico para mi trabajo, presentando mi experiencia profesional (C++, Python), mi stack tecnológico y, lo más importante, alojando demos interactivas de mis proyectos de Inteligencia Artificial y Big Data.
