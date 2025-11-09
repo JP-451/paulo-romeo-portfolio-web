@@ -52,3 +52,35 @@ header nav a{
     width: 100%;
     text-align: center;
 }
+
+#inicio{
+    display: flex;
+    flex-direction: row;
+}
+
+#inicioDescripcion {
+    width: 50%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    padding-left: 1%;
+}
+
+#inicioDescripcion h1{
+    font-size: 4em;
+    opacity: 40%;
+}
+
+#inicioDescripcion h3{
+    font-size: 1.4em;
+    opacity: 40%;
+}
+
+#inicioImagen{
+    width: 50%;
+}
+
+#inicioImagen img{
+    width: 100%;
+}
