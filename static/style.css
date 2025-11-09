@@ -56,20 +56,24 @@ header nav a{
 #inicio{
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow-x: hidden;
+    padding: 2% 0 5% 0;
 }
 
-#inicioDescripcion {
-    width: 50%;
+section{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+}
+
+#inicioDescripcion {
+    width: 50%;
     padding-left: 1%;
 }
 
 #inicioDescripcion h1{
-    font-size: 4em;
+    font-size: 4.2em;
     opacity: 40%;
 }
 
@@ -78,11 +82,47 @@ header nav a{
     opacity: 40%;
 }
 
+#inicio figure.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 2.5em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+#inicio ul.ticker-track {
+    display: inline-block;
+    animation: scroll-left 20s linear infinite;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#inicio ul.ticker-track li {
+    display: inline-block;
+    padding: 0 2em; 
+    font-size: 1.3em;
+    opacity: 40%; 
+    font-family: "Raleway", sans-serif; 
+    font-weight: 100;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 #inicioImagen{
     width: 50%;
     animation: slideInFromRight 1.2s ease-out forwards;
-    box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    box-shadow: -10px 0 25px rgba(0, 0, 0, 0.1),  /* Sombra;izquierda */
+             0 -10px 25px rgba(0, 0, 0, 0.08), /* Sombra arriba */
+             0 10px 25px rgba(0, 0, 0, 0.1);   /* Sombra abajo */
 }
 
 #inicioImagen img{
