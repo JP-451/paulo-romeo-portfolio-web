@@ -56,6 +56,7 @@ header nav a{
 #inicio{
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 #inicioDescripcion {
@@ -79,8 +80,24 @@ header nav a{
 
 #inicioImagen{
     width: 50%;
+    animation: slideInFromRight 1.2s ease-out forwards;
+    box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 #inicioImagen img{
     width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: right top;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
