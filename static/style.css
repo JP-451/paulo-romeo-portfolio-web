@@ -146,10 +146,11 @@ section{
 
 #proyectos {
     padding: 2em 1%; 
+    margin-bottom: 4%;
 }
 
 section h2{
-    color: #005A9C;
+    color: #1D2D3C;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 1%;
 }
@@ -248,4 +249,109 @@ section h2{
 
 #proyectos #proyecto-3 {
     background-image: url('/static/img/dashboard.png');
+}
+
+#experiencia {
+    padding: 2em 1%;
+}
+
+#experiencia .experiencia-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    padding: 1em;
+}
+
+#experiencia .experiencia-card {
+    background-color: #FFFFFF;
+    border-radius: 1em;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#experiencia .experiencia-card:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+#experiencia .experiencia-resumen {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    cursor: pointer;
+    min-height: 8em;
+    list-style: none;
+}
+
+#lasergran{
+    width: 60%;
+}
+
+#nazari{
+    width: 45%;
+}
+
+#experiencia .experiencia-resumen::-webkit-details-marker {
+    display: none;
+}
+
+#experiencia .experiencia-card[open] .experiencia-resumen {
+    min-height: auto;
+}
+
+#experiencia .experiencia-resumen h3 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #212529;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+#experiencia .experiencia-resumen h4 {
+    font-size: 1.1em;
+    margin: 0.5em 0 0 0;
+    color: #212529;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+#experiencia .card-arrow-down {
+    background-color: transparent;
+    position: relative;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+
+#experiencia .card-arrow-down::after {
+    content: '';
+    display: block;
+    width: 0.7em;
+    height: 0.7em;
+    border-right: 2px solid #2B6CB0;
+    border-bottom: 2px solid #2B6CB0;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+#experiencia .experiencia-card[open] .card-arrow-down::after {
+    transform: rotate(225deg);
+}
+
+#experiencia .experiencia-detalle {
+    padding: 0 1.5em 1.5em 1.5em;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 60%;
+    color: #212529;
+}
+
+#experiencia .experiencia-detalle p,
+#experiencia .experiencia-detalle ul {
+    margin: 0;
+    padding: 0;
+}
+
+#experiencia .experiencia-detalle ul {
+    list-style-position: inside;
+    margin-top: 1em;
 }
