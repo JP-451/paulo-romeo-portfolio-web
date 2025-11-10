@@ -31,14 +31,35 @@ header article{
 
 header article a{
     width: 20%;
+    align-items: center;
 }
 
-#github{
+#contactMe{
+    font-size: 0.8em;
+    background-color: #48D5C9;
+    color: #212529;
+    border: 0;
+    border-radius: 5px;
+    padding: 6%;
+    transition: background-color 1s ease;
+}
+
+#enlaceContact{
+    margin-right: 1%;
     width: 40%;
 }
 
+#contactMe:hover {
+    background-color: #2a62a0;
+    color: #FFFFFF;
+}
+
+#github{
+    width: 50%;
+}
+
 #linkedin{
-    width: 35%;
+    width: 48%;
 }
 
 header nav{
