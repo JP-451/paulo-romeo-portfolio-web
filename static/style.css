@@ -260,6 +260,7 @@ section h2{
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5em;
     padding: 1em;
+    align-items: start;
 }
 
 #experiencia .experiencia-card {
