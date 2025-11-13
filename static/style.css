@@ -1,7 +1,7 @@
 body{
     margin: 0;
     background-color: #F8F9FA;
-    color: #1D2D3C;
+    color: hsl(209, 35%, 17%);
     font-size: 0.8em;
 }
 
@@ -127,8 +127,10 @@ section{
     padding: 0 2em; 
     font-size: 1.3em;
     opacity: 40%; 
-    font-family: "Raleway", sans-serif; 
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 100;
+    font-style: normal;
 }
 
 @keyframes scroll-left {
