@@ -1,43 +1,49 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a');
 
-        // 1. Seleccionar todas las secciones y los enlaces
-        //    (Asegúrate de que tus secciones son <section> con un id)
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('nav a');
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    };
 
-        // 2. Opciones para el observador
-        const options = {
-            root: null, // Observa en relación al viewport completo
-            rootMargin: '0px',
-            threshold: 0.5 // Se activa cuando el 50% de la sección es visible
-        };
+    const onIntersection = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                
+                const id = entry.target.id;
 
-        // 3. ESTA ES TU FUNCIÓN (Está perfecta)
-        const onIntersection = (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    
-                    const id = entry.target.id; // ej: "proyectos"
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
 
-                    // Quitamos 'active' de TODOS los enlaces
-                    navLinks.forEach(link => {
-                        link.classList.remove('active');
-                    });
-
-                    // Añadimos 'active' SÓLO al enlace correcto
-                    const activeLink = document.querySelector(`nav a[href="#${id}"]`);
-                    if (activeLink) {
-                        activeLink.classList.add('active');
-                    }
+                const activeLink = document.querySelector(`nav a[href="#${id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
                 }
-            });
-        };
-
-        // 4. Crear el observador y ponerlo en marcha
-        const observer = new IntersectionObserver(onIntersection, options);
-
-        // 5. "Vigilar" cada sección
-        sections.forEach(section => {
-            observer.observe(section);
+            }
         });
+    };
+
+    const observer = new IntersectionObserver(onIntersection, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
     });
+
+    const progressBar = document.querySelector('.scroll-progress-bar');
+
+    function updateScrollProgress() {
+        if (!progressBar) return;
+
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+        const scrollPercentage = scrollHeight > 0 ? (scrollTop / scrollHeight) : 0;
+
+        progressBar.style.transform = `scaleX(${scrollPercentage})`;
+    }
+
+    window.addEventListener('scroll', updateScrollProgress);
+});
