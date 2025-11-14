@@ -1,75 +1,55 @@
-# paulo-romeo-portfolio-web
-Portfolio Personal
+# Portfolio Personal (HTML, CSS y JavaScript NATIVO)
 
-🚀 Ver la Demo en Vivo 🚀
+Este repositorio contiene el código fuente de mi portfolio personal. Es un proyecto construido **100% desde cero con HTML, CSS y JavaScript nativo (vanilla)**, sin depender de librerías o frameworks externos.
 
-(Reemplaza esta URL con el enlace de tu web en PythonAnywhere cuando la despliegues)
+El objetivo era crear una web moderna, semántica y altamente optimizada, demostrando un profundo conocimiento de las tecnologías web fundamentales.
 
-📄 Sobre este Proyecto
+---
 
-Bienvenido al repositorio de mi portfolio personal. Esta web no es solo un currículum estático; es un proyecto Full Stack vivo construido desde cero para demostrar mis habilidades como desarrollador de software.
+## 🛠️ Stack Tecnológico
 
-El objetivo principal es servir como un centro neurálgico para mi trabajo, presentando mi experiencia profesional (C++, Python), mi stack tecnológico y, lo más importante, alojando demos interactivas de mis proyectos de Inteligencia Artificial y Big Data.
+* **HTML5 (Semántico):** Estructurado con `<header>`, `<main>`, `<footer>`, `<section>` y `<article>`. Utiliza elementos modernos como `<details>` y `<summary>` para la funcionalidad de acordeón.
+* **CSS3 (Moderno):**
+    * **Layout:** `display: flex` y `display: grid` para una estructura responsive robusta.
+    * **Animaciones:** Múltiples animaciones y transiciones nativas con `@keyframes` y `transition`.
+    * **Interactividad:** Un carrusel de proyectos horizontal creado puramente con CSS, usando `scroll-snap-type`.
+* **JavaScript (ES6+ NATIVO):**
+    * **API Moderna:** Utiliza `IntersectionObserver` para una detección de scroll eficiente.
+    * **Sin librerías:** Todo el código de interactividad es escrito a mano.
 
-🛠️ Stack Tecnológico
-Este proyecto fue construido usando un stack de Python limpio y eficiente, demostrando la capacidad de crear aplicaciones web robustas sin depender excesivamente de librerías pesadas.
+---
 
-Backend: Python 3 (usando el micro-framework Flask)
+## ✨ Características Técnicas Destacadas
 
-Frontend: HTML5, CSS3 (con diseño responsive usando Flexbox y Grid) y JavaScript (ES6+)
+Este proyecto incluye varias características técnicas que demuestran un enfoque moderno del desarrollo frontend:
 
-Base de Datos: MySQL (utilizada para el formulario de contacto y como base para futuras demos de IA)
+1.  **Navegación Activa con `IntersectionObserver`:** El menú de navegación resalta la sección activa automáticamente mientras el usuario hace scroll. Esto se logra usando la **API `IntersectionObserver`**, que es mucho más eficiente que usar un evento `onscroll`.
+2.  **Acordeón de Experiencia Nativo:** La sección de "Experiencia" utiliza las etiquetas semánticas `<details>` y `<summary>`, logrando una funcionalidad de "acordeón" desplegable **sin una sola línea de JavaScript**.
+3.  **Carrusel de Proyectos (Puro CSS):** La galería de proyectos es un carrusel horizontal que se "ajusta" a cada tarjeta al deslizar, utilizando la propiedad `scroll-snap-type` de CSS.
+4.  **Barra de Progreso de Scroll:** El `header` fijo incluye una barra de progreso que se actualiza en tiempo real según la posición de scroll del usuario.
 
-Despliegue (Hosting): PythonAnywhere
+---
 
-Control de Versiones: Git / GitHub
+## 🚀 Cómo ver el proyecto localmente
 
-✨ Características (Features)
-Diseño 100% Responsive: Totalmente funcional y adaptado a dispositivos móviles, tablets y escritorio.
+Dado que este proyecto no está alojado en un servidor, la forma de verlo es abriendo los archivos directamente en tu navegador.
 
-Galería de Proyectos: Sección dinámica que muestra mis proyectos principales, cada uno con enlaces a su demo en vivo y a su repositorio de código.
+1.  **Clona o Descarga el ZIP:**
+    * Haz clic en el botón verde `<> Code` en la parte superior de esta página.
+    * Selecciona `Download ZIP`.
 
-Backend Funcional: Formulario de contacto que utiliza Flask-Mail para procesar y enviarme un correo electrónico directamente desde la web.
+2.  **Descomprime el archivo:**
+    * Extrae la carpeta `.zip` que acabas de descargar (por ejemplo, en tu Escritorio).
 
-API Endpoints (en desarrollo): La estructura de Flask está preparada para servir como API RESTful para mis futuros proyectos de IA (ej. un modelo de predicción o un chatbot).
+3.  **Abre la web:**
+    * Entra en la carpeta extraída.
+    * Haz **doble clic en el archivo `index.html`**.
+    * ¡El portfolio se abrirá en tu navegador web predeterminado!
 
-🚀 Cómo ejecutar este proyecto localmente
-Si deseas ejecutar este proyecto en tu propia máquina, sigue estos pasos.
+---
 
-Pre-requisitos
-Python 3.10+
+## 📬 Contacto
 
-Git
-
-Instalación
-Clona el repositorio:
-
-Bash
-
-git clone https://github.com/tu-usuario/paulo-romeo-portfolio-web.git
-cd paulo-romeo-portfolio-web
-Crea y activa un entorno virtual:
-
-Bash
-
-# En macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-
-# En Windows
-python -m venv venv
-.\venv\Scripts\activate
-Instala las dependencias: (Asegúrate de haber creado el archivo requirements.txt primero)
-
-"pip install -r requirements.txt"
-Ejecuta la aplicación:
-
-"flask run --debug"
-¡Abre http://127.0.0.1:5000 en tu navegador!
-
-📬 Contacto
-¡Gracias por visitar mi proyecto! Si estás interesado en mi perfil o quieres hablar sobre tecnología, no dudes en contactarme.
-
-LinkedIn: https://www.linkedin.com/in/tu-perfil/
-
-Email: pauloromeojp@gmail.com
+* **LinkedIn:** `https://www.linkedin.com/in/paulo-romeo-jim%C3%A9nez-p%C3%A9rez-a24b70291/`
+* **GitHub:** `https://github.com/JP-451`
+* **Email:** `pauloromeojp@gmail.com`
