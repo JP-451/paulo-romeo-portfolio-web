@@ -306,15 +306,15 @@ section h2{
 }
 
 #proyectos #proyecto-1 {
-    background-image: url('/static/img/akita.png');
+    background-image: url('../static/img/akita.png');
 }
 
 #proyectos #proyecto-2 {
-    background-image: url('/static/img/vivienda.png');
+    background-image: url('../static/img/vivienda.png');
 }
 
 #proyectos #proyecto-3 {
-    background-image: url('/static/img/dashboard.png');
+    background-image: url('../static/img/dashboard.png');
 }
 
 #experiencia {
@@ -498,13 +498,13 @@ section h2{
 }
 
 .medac {
-    background-image: url('/static/img/medac.png'); 
+    background-image: url('../static/img/medac.png'); 
 }
 
 .efa {
-    background-image: url('/static/img/efa.png');
+    background-image: url('../static/img/efa.png');
 }
 
 .ia {
-    background-image: url('/static/img/medac.png');
+    background-image: url('../static/img/medac.png');
 }
